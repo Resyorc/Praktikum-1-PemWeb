@@ -1,0 +1,34 @@
+* {
+  margin: 5px 0 0 5px;
+}
+nav {
+  font-family: sans-serif;
+  background-color: #efefef;
+  overflow: hidden;
+  max-width: fit-content;
+}
+
+nav a {
+  float: left;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: 100;
+  padding: 12px 20px 12px 20px;
+  border-bottom: 4px #efefef;
+  margin: 0;
+}
+nav a:hover {
+  background-color: #474747;
+  color: white;
+  border-bottom: 4px solid #43acab;
+}
+nav a.active {
+  background-color: #43acab;
+  color: white;
+}
+nav a.active:hover {
+  background-color: #474747;
+  color: white;
+  border-bottom: 4px solid #43acab;
+}
