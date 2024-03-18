@@ -1,33 +1,40 @@
 * {
-  margin: 5px 0 0 5px;
+  margin: 0;
+  padding: 0;
 }
 nav {
   font-family: sans-serif;
   background-color: #efefef;
-  overflow: hidden;
-  max-width: fit-content;
+  display: inline-block;
+  margin: 10px;
 }
 
-nav a {
-  float: left;
-  text-decoration: none;
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li a {
   color: black;
+  text-decoration: none;
   font-size: 24px;
   font-weight: 100;
+  display: inline-block;
   padding: 12px 20px 12px 20px;
-  border-bottom: 4px #efefef;
-  margin: 0;
 }
-nav a:hover {
+
+nav ul li a:hover {
   background-color: #474747;
   color: white;
   border-bottom: 4px solid #43acab;
 }
-nav a.active {
+
+nav ul li a.active {
   background-color: #43acab;
   color: white;
 }
-nav a.active:hover {
+
+nav ul li a.active:hover {
   background-color: #474747;
   color: white;
   border-bottom: 4px solid #43acab;
