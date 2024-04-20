@@ -1,0 +1,23 @@
+body {
+  background-color: aliceblue;
+}
+
+@font-face {
+  font-family: "Pokemon Hollow";
+  src: url("../font/Pokemon_solid.ttf") format("truetype");
+}
+
+.navbar .navbar-brand {
+  font-size: 24px;
+  color: #c7a008;
+  font-family: "Pokemon Hollow", sans-serif; /* Pastikan untuk menyertakan font cadangan */
+  text-shadow: -1px -1px 0 #2a75bb, 1px -1px 0 #2a75bb, -1px 1px 0 #2a75bb,
+    1px 1px 0 #2a75bb, 0px 0px 4px #2a75bb;
+}
+.modal-backdrop {
+  background-color: rgba(255, 255, 255, 1); /* Warna hitam dengan opacity 0.5 */
+}
+
+.card {
+  background-color: seashell;
+}
