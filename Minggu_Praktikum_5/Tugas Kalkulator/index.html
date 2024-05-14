@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" readonly />
+      <br />
+      <input type="button" class="buttonC" value="C" onclick="clearDisplay()" />
+      <input type="button" class="buttonBack" value="←" onclick="backspace()" />
+      <input
+        type="button"
+        class="button7"
+        value="7"
+        onclick="appendToDisplay('7')"
+      />
+      <input
+        type="button"
+        class="button8"
+        value="8"
+        onclick="appendToDisplay('8')"
+      />
+      <input
+        type="button"
+        class="button9"
+        value="9"
+        onclick="appendToDisplay('9')"
+      />
+      <input
+        type="button"
+        class="buttonBagi"
+        value="/"
+        onclick="appendToDisplay('/')"
+      />
+      <br />
+      <input
+        type="button"
+        class="button4"
+        value="4"
+        onclick="appendToDisplay('4')"
+      />
+      <input
+        type="button"
+        class="button5"
+        value="5"
+        onclick="appendToDisplay('5')"
+      />
+      <input
+        type="button"
+        class="button6"
+        value="6"
+        onclick="appendToDisplay('6')"
+      />
+      <input
+        type="button"
+        class="buttonKali"
+        value="*"
+        onclick="appendToDisplay('*')"
+      />
+      <br />
+      <input
+        type="button"
+        class="button1"
+        value="1"
+        onclick="appendToDisplay('1')"
+      />
+      <input
+        type="button"
+        class="button2"
+        value="2"
+        onclick="appendToDisplay('2')"
+      />
+      <input
+        type="button"
+        class="button3"
+        value="3"
+        onclick="appendToDisplay('3')"
+      />
+      <input
+        type="button"
+        class="buttonKurang"
+        value="-"
+        onclick="appendToDisplay('-')"
+      />
+      <br />
+      <input
+        type="button"
+        class="button0"
+        value="0"
+        onclick="appendToDisplay('0')"
+      />
+      <input
+        type="button"
+        class="buttonKoma"
+        value="."
+        onclick="appendToDisplay('.')"
+      />
+      <input
+        type="button"
+        class="buttonTambah"
+        value="+"
+        onclick="appendToDisplay('+')"
+      />
+      <input
+        type="button"
+        class="buttonHasil"
+        value="="
+        onclick="calculate()"
+      />
+      <br />
+    </div>
+
+    <script>
+      function appendToDisplay(value) {
+        document.getElementById("display").value += value;
+      }
+
+      function clearDisplay() {
+        document.getElementById("display").value = "";
+      }
+
+      function calculate() {
+        var display = document.getElementById("display");
+        var result = eval(display.value);
+        display.value = result;
+      }
+
+      function backspace() {
+        var display = document.getElementById("display");
+        var currentValue = display.value;
+        display.value = currentValue.substring(0, currentValue.length - 1);
+      }
+    </script>
+  </body>
+</html>
