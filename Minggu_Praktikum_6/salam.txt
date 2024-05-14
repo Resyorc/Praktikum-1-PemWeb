@@ -1,0 +1,3 @@
+<div style="font-size: 100px;">"Nama" : "Ferry Oktariansyah"</div>
+
+<div style="font-size: 100px">"NIM" &nbsp; : 1203220006</div>

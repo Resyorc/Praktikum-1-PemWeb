@@ -29,9 +29,10 @@
   padding: 1em 0;
 }
 .sidebar nav ul li a {
-  color: #000000;
+  color: #817f7f;
   font-size: 2em;
   font-weight: bold;
+  padding-top: 2em;
 }
 .content {
   grid-area: main;
@@ -50,6 +51,7 @@
 }
 .content .hero .hero-content {
   padding-left: 2em;
+  color: #928f8f;
 }
 .content .hero .hero-content h1 {
   font-size: 5.5em;
@@ -132,6 +134,7 @@
   }
   .sidebar nav ul li a {
     display: flex;
+    padding: 0;
   }
   .content {
     grid-area: main;
@@ -142,8 +145,8 @@
     text-align: center;
   }
   .content .hero img {
+    transform: translateY(0);
     position: relative;
-    transform: translateY(-3%);
     padding-left: 10em;
     margin: 5em 15em;
     height: 100px;

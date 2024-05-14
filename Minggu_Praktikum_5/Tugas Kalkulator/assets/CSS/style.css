@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "Calculator";
+  src: url("../Font/Calculator.ttf") format("truetype"); /* Ganti 'path/ke/font.ttf' dengan path sesuai dengan lokasi file font di dalam proyek Anda */
+}
+
+.calculator {
+  display: grid;
+  grid-template-areas:
+    "display display display display"
+    "buttonC buttonC buttonBack buttonBack"
+    "button7 button8 button9 buttonBagi"
+    "button4 button5 button6 buttonKali"
+    "button1 button2 button3 buttonKurang"
+    "button0 buttonKoma buttonHasil buttonTambah";
+  gap: 5px;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+}
+input[type="button"] {
+  height: 60px;
+  font-size: 24px;
+}
+/* .buttonC,
+.buttonBack {
+  width: auto; 
+  height: auto;
+  font-size: 18px; 
+} */
+#display {
+  grid-area: display;
+  height: 40px;
+  font-size: 32px;
+  font-family: "Calculator";
+  letter-spacing: 2px;
+  padding: 0 4px;
+}
+.buttonC {
+  grid-area: buttonC;
+}
+.button1 {
+  grid-area: button1;
+}
+.button2 {
+  grid-area: button2;
+}
+.button3 {
+  grid-area: button3;
+}
+.button4 {
+  grid-area: button4;
+}
+.button5 {
+  grid-area: button5;
+}
+.button6 {
+  grid-area: button6;
+}
+.button7 {
+  grid-area: button7;
+}
+.button8 {
+  grid-area: button8;
+}
+.button9 {
+  grid-area: button9;
+}
+.button0 {
+  grid-area: button0;
+}
+.buttonBagi {
+  grid-area: buttonBagi;
+}
+.buttonBack {
+  grid-area: buttonBack;
+}
+.buttonKali {
+  grid-area: buttonKali;
+}
+.buttonTambah {
+  grid-area: buttonTambah;
+}
+.buttonKurang {
+  grid-area: buttonKurang;
+}
+.buttonKoma {
+  grid-area: buttonKoma;
+}
+.buttonHasil {
+  grid-area: buttonHasil;
+}
